@@ -1,0 +1,365 @@
+.table {
+  font-weight: 50px !important;
+  font-size: small;
+  width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  width: 100%;
+  height: 100%;
+}
+
+.mat-header-row,
+.mat-footer-row,
+.mat-row {
+  display: flex;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-style: none;
+  align-items: center;
+  box-sizing: border-box;
+  content: attr(data-label);
+  min-height: 42px;
+}
+
+.mat-header-cell {
+  color: #000000;
+}
+
+.mat-cell {
+  color: #000000;
+  border-bottom: 1px !important
+}
+
+.azul {
+  background-color: #2f92e7 !important;
+  color: white;
+}
+
+button {
+  height: 30px;
+  width: 30px;
+  padding: 1px;
+}
+
+.boton {
+  width: 100%;
+  height: 37.33px;
+  font-size: 1rem !important;
+  margin-top: 20px;
+}
+
+.botonCargar {
+  width: 100%;
+  height: 100%;
+}
+
+i {
+  font-size: medium !important;
+}
+
+.mat-header-cell {
+  background-color: #e9ecef;
+}
+
+.mat-header-row {
+  background-color: #e9ecef;
+}
+
+.left-margin-btn {
+  margin-left: 5px;
+}
+
+.right-margin-button {
+  margin-left: 15px;
+}
+
+i {
+  color: black;
+}
+
+.responsiva i {
+  color: white;
+}
+
+.horizontal-row {
+  margin-bottom: 15px;
+}
+
+.error-form {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #c71c22;
+}
+
+.error-input {
+  border: 1px solid red;
+}
+
+.mt-negtive {
+  margin-top: -2.5em;
+}
+
+.format-select {
+  display: inline-block;
+  width: 55%;
+}
+
+.custom-select-centro {
+  width: auto;
+}
+
+.custom-select-servicio {
+  width: 70%;
+}
+
+.margin-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*tabla expandible*/
+table {
+  width: 100%;
+}
+
+tr {
+  display: flex;
+}
+
+tr.mat-header-row,
+tr.mat-row {
+  display: flex;
+}
+
+tr.example-detail-row {
+  height: auto;
+}
+
+
+tr.example-element-row:hover {
+  background: #777;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.mat-column-expandedDetail {
+  width: 100vw;
+}
+
+.mat-column-mostrarSubtabla {
+  flex: 0 0 5%;
+}
+
+.mat-column-apellidos {
+  flex: 0 0 25%;
+}
+
+.mat-column-tpoSegMedico {
+  flex: 0 0 18%;
+}
+
+.mat-column-subexp {
+  flex: 0 0 10%;
+}
+
+.mat-column-padre {
+  flex: 0 0 10%;
+}
+
+.mat-column-tpoServicio {
+  flex: 0 0 10%;
+}
+
+.mat-column-tpoPlaza {
+  flex: 0 0 17%;
+}
+
+.mat-column-fFin {
+  flex: 0 0 8%;
+}
+
+.mat-column-fInicio {
+  flex: 0 0 8%;
+}
+
+.mat-column-codLapa {
+  flex: 0 0 7%;
+}
+
+.mat-column-estado {
+  flex: 0 0 15%;
+}
+
+.mat-column-descProcedimiento {
+  flex: 0 0 50%;
+}
+
+.mat-column-centros {
+  flex: 0 0 22%;
+}
+
+.redColor {
+  color: #ff0000;
+}
+
+.tr.mat-footer-row,
+tr.mat-row {
+  height: auto !important;
+  border: 1px;
+}
+
+.mdc-data-table__cell {
+  border-top-width: black 1px !important;
+}
+
+.mat-mdc-table .mat-mdc-header-cell {
+  background-color: lightgray;
+}
+
+.mdc-data-table__cell,
+.mdc-data-table__header-cell {
+  padding: 0 0 0 0;
+}
+
+.align-right{
+	float: right;
+	margin-left: auto;
+  margin-right: 10px;
+}
+
+.align-center{
+	justify-content: center;
+}
+
+.align-bottom{
+	display: flex;
+	align-items: flex-end;
+}
+
+.right-margin{
+	margin-right: 10px !important;
+}
+
+
+.margin-top-title{
+	margin-top: 20px;
+}
+
+.margin-top{
+	padding-top: 20px;
+}
+.margin-top-barra{
+	margin-top: 5px;
+}
+.margin-left{
+	margin-left: 10px;
+}
+
+.margin-left-btn{
+	margin-left: 10px;
+}
+
+.arreglarCheckbox{
+  margin-top: 12px;
+  margin-bottom: -20px;
+  margin-left: 5px;
+}
+
+.subir{
+  margin-top: -18px;
+}
+
+.no-padding-right{
+  padding-right: 0 !important;
+}
+
+.no-padding-left{
+  padding-left: 0 !important;
+}
+.mediano{
+  width: 20px;
+  height: 20px;
+}
+
+.botonSesion{
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+  width: 100%;
+}
+
+.nombreUsuario{
+  margin-top: 20px;
+}
+
+.centraTexto{
+  text-align: center;
+}
+
+
+@media (max-width: 767.9px){
+	.margin-left-modular{
+		margin-left: 10px !important;
+	}
+	.margin-left-modular-btn{
+		margin-left: 20px !important;
+	}
+	.margin-left-modular-input{
+		margin-left: 15px !important;
+	}
+	.margin-left-modular-title{
+		margin-left: 25px;
+	}
+	.padding-top-modular{
+		padding-top: 20px;
+	}
+	.bajar-modular{
+		margin-bottom: -7px;
+	}
+  .fix-btn-modular{
+		padding: 2px !important;
+	}
+  .mat-mdc-table .mdc-data-table__row {
+    height: auto;
+    /* width: auto; */
+  }
+  .mdc-data-table__cell{
+    font-size: 10px !important;
+  }
+  .mdc-data-table__header-cell{
+    font-size:12px !important;
+  }
+  .width-modular{
+    width: 100% !important;
+    height: 37.33px !important;
+  }
+  .no-margin-modular{
+    margin-left: 0px !important;
+  }
+  .width-100-modular{
+    width: 100% !important;
+  }
+  
+}
+
+@media (min-width: 768px){
+  .width-bigscreen{
+    width: auto !important;
+  }
+
+  .width-80-bigscreen{
+    max-width:80%
+  }
+}

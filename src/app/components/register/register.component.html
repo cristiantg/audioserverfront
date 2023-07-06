@@ -1,0 +1,49 @@
+<div style="text-align:center;margin-top: 20px;" class="align-center">
+    <div class="col-md-1 align-right right-margin centraTexto margin-left-modular width-bigscreen">
+        <form [formGroup]="langSelect">
+            <select class="btn btn-primary botonSesion" (change)="useLanguage($event)" formControlName="lang"
+                style="padding-left: 25px;padding-bottom: 0px;padding-top: 0px;">
+                <option lang="en-US" value="en-US">English</option>
+                <option lang="es-ES" value="es-ES">Español</option>
+            </select>
+        </form>
+    </div>
+    <br>
+    <form [formGroup]="formRegister">
+        <div class="row margin-top-title margin-left-modular">
+            <h1> {{'register.title' | translate}} </h1>
+        </div>
+        <div class="row margin-top align-center margin-left-modular">
+            <div class="col-md-5 ">
+                <label for="email">{{'register.email' | translate}}</label>
+                <input type="text" formControlName="email" class="a">
+            </div>
+        </div>
+        <div class="row margin-top align-center margin-left-modular">
+            <div class="col-md-5 ">
+                <label for="usuario">{{'register.username' | translate}}</label>
+                <input type="text" formControlName="usuario" class="a">
+            </div>
+        </div>
+        <div class="row margin-top align-center margin-left-modular">
+            <div class="col-md-5 ">
+                <label for="passwd">{{'login.passwd' | translate}}</label>
+                <input type="password" formControlName="passwd" class="a">
+            </div>
+        </div>
+        <br>
+        <div class="row margin-top  align-center">
+            <div class="col-md-3 margin-left-modular-btn">
+                <button (click)="registrarse()" class="btn btn-primary"> {{'login.register' | translate}} </button>
+            </div>
+            <div class="col-md-3 margin-left-modular-btn padding-top-modular">
+                <button (click)="login()" class="btn btn-primary"> {{'register.login' | translate}}</button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+    <div class="row">
+        <label>Audioserver - (C) CLST. 2023 </label>
+    </div>
+</div>

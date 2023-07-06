@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="es">
+    <body>
+      <trans-unit id="8364309938383915497" datatype="html">
+        <source> Home </source>
+        <target>Inicio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7504940227782988572" datatype="html">
+        <source> Logout </source>
+        <target>Cerrar sesión</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2824799897324778254" datatype="html">
+        <source>Created at:</source>
+        <target>Fecha de creación:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2558496230553086605" datatype="html">
+        <source> Updated at:</source>
+        <target>Última actualización:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8197565209153349786" datatype="html">
+        <source> Optional text:</source>
+        <target>Frase asociada:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5312067962406148453" datatype="html">
+        <source> Filename:</source>
+        <target>Nombre del archivo:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9159111483847509475" datatype="html">
+        <source> Result:</source>
+        <target>Resultado:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2565964482658027306" datatype="html">
+        <source>Only show entries with result:</source>
+        <target>Solo mostrar entardas con resultado:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5398424878982689982" datatype="html">
+        <source> Filter</source>
+        <target>Filtrar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8186013988289067040" datatype="html">
+        <source>Code</source>
+        <target>Código</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3530562496384978355" datatype="html">
+        <source>Optional text </source>
+        <target>Frase asociada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2525230676386818985" datatype="html">
+        <source>Result</source>
+        <target>Resultado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2010669142736212044" datatype="html">
+        <source>Keep audio</source>
+        <target>Guardar audio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7930819485334955445" datatype="html">
+        <source> Beam</source>
+        <target>Intensidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7003790776240394114" datatype="html">
+        <source>Filename</source>
+        <target>Nombre del archivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1520049505561836231" datatype="html">
+        <source>Created at</source>
+        <target>Fecha de creación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7447022493696033106" datatype="html">
+        <source>Updated at</source>
+        <target>Última actualización</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5462361983940693567" datatype="html">
+        <source>Channel</source>
+        <target>Canal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4876115372276784624" datatype="html">
+        <source>Time start</source>
+        <target>Inicio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7410432243549869948" datatype="html">
+        <source>Duration</source>
+        <target>Duración</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4283120042219249873" datatype="html">
+        <source>Word</source>
+        <target>Palabra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7123653594948067002" datatype="html">
+        <source>Score</source>
+        <target>Puntuación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8663273201844125460" datatype="html">
+        <source> Download as JSON </source>
+        <target>Descargar JSON</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7718964776766743268" datatype="html">
+        <source>Only the first <x id="INTERPOLATION" equiv-text="{{cantidadCargada}}"/> entries out of <x id="INTERPOLATION_1" equiv-text="{{cantidadPosible}}"/> have been loaded:</source>
+        <target>Se han cargado las primeras <x id="INTERPOLATION" equiv-text="{{cantidadCargada}}"/> entradas de <x id="INTERPOLATION_1" equiv-text="{{cantidadPosible}}"/>: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5617034800432399210" datatype="html">
+        <source> Load <x id="INTERPOLATION" equiv-text="{{limite}}"/> more </source>
+        <target>Cargar <x id="INTERPOLATION" equiv-text="{{limite}}"/> más</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4743002849260529978" datatype="html">
+        <source>Items per page:</source>
+        <target>Entradas por página</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3337301694210287595" datatype="html">
+        <source>Next page</source>
+        <target>Página siguiente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3629960544875360046" datatype="html">
+        <source>Previous page</source>
+        <target>Página anterior</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8642445555713453888" datatype="html">
+        <source>First page</source>
+        <target>Primera página</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6784758141439994527" datatype="html">
+        <source>Last page</source>
+        <target>Última página</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6296248410614565344" datatype="html">
+        <source>history.json</source>
+        <target>historial.json</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1908285951500318953" datatype="html">
+        <source> Login </source>
+        <target>Iniciar sesión</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6647254796236053090" datatype="html">
+        <source>Email/Username:</source>
+        <target>Usuario o email:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6865009229971482891" datatype="html">
+        <source>Password:</source>
+        <target>Contraseña:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2085407646410928021" datatype="html">
+        <source> Login</source>
+        <target>Iniciar sesión</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2907733796351584017" datatype="html">
+        <source> Register </source>
+        <target>Registrarse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5029251597828497117" datatype="html">
+        <source>Incorrect password or username</source>
+        <target>Usuario o contraseña incorrectos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="186236568870281953" datatype="html">
+        <source>History</source>
+        <target>Historial</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797778920049399855" datatype="html">
+        <source>Logout</source>
+        <target>Cerrar sesión</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1061631351282296003" datatype="html">
+        <source> Start the recording and speak </source>
+        <target>Inicie la grabación y hable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4853272438600051865" datatype="html">
+        <source> Language:</source>
+        <target>Idioma:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5190825892106392539" datatype="html">
+        <source>Spanish</source>
+        <target>Español</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3071065188816255493" datatype="html">
+        <source>Dutch</source>
+        <target>Neerlandés</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5866254605255506989" datatype="html">
+        <source>English</source>
+        <target>Inglés</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2027177758604927665" datatype="html">
+        <source> Beam:</source>
+        <target>Intensidad:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5802574085505889758" datatype="html">
+        <source>Save audio:</source>
+        <target>Guardar audio:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2807800733729323332" datatype="html">
+        <source>Yes</source>
+        <target>Si</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3542042671420335679" datatype="html">
+        <source>No</source>
+        <target>No</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6092494141512293178" datatype="html">
+        <source>Optional text:</source>
+        <target>Frase asociada (Opcional):</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7182630849226923990" datatype="html">
+        <source> Start recording </source>
+        <target>Iniciar grabación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6488342633570198805" datatype="html">
+        <source> Stop recording </source>
+        <target>Parar grabación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1238583382012712938" datatype="html">
+        <source> Clear </source>
+        <target>Limpiar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8039558938553726700" datatype="html">
+        <source>Character limit reached, clear the result to continue using the page</source>
+        <target>Límite de caracteres superado, pulse el botón limpiar para continuar usando la página</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main/main.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

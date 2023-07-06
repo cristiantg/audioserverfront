@@ -1,0 +1,226 @@
+<div class="row">
+
+    <div class="col-md-1 align-right margin-left-modular centraTexto width-bigscreen">
+        <label class="nombreUsuario"> <mat-icon class="bajar-modular">account_circle</mat-icon><br>{{username}} </label>
+        <button class="btn btn-primary botonSesion" (click)="inicio()"> {{'menu.main' | translate}} </button>
+        <form [formGroup]="langSelect">
+            <select class="btn btn-primary botonSesion" (change)="useLanguage($event)" formControlName="lang"
+                style="padding-left: 25px;padding-bottom: 0px;padding-top: 0px;">
+                <option lang="en-US" value="en-US" style="text-align-last:center;">English</option>
+                <option lang="es-ES" value="es-ES" style="text-align-last:center;">Español</option>
+            </select>
+        </form>
+        <button class="btn btn-danger botonSesion" (click)="cerrarSesion()"> {{'menu.logout' | translate}} </button>
+    </div>
+
+</div>
+<form [formGroup]="formFiltro">
+    <div class="row margin-top align-center">
+        <div class="col-md-3 margin-left-modular-btn">
+            <label for="fecha">{{'history.createdAt' | translate}}:</label>
+            <input type="text" style="height: 30px;" formControlName="fecha" value="" class="a">
+        </div>
+
+        <div class="col-md-3 margin-left-modular-btn">
+            <label for="fechaEdicion"> {{'history.updatedAt' | translate}}:</label>
+            <input type="text" style="height: 30px;" formControlName="fechaEdicion" value="" class="a">
+        </div>
+
+        <div class="col-md-3 margin-left-modular-btn">
+            <label for="opcional"> {{'main.config.tag' | translate}}:</label>
+            <input type="text" style="height: 30px;" formControlName="opcional" value="" class="a">
+        </div>
+    </div>
+    <div class="row align-center">
+        <div class="col-md-3 margin-left-modular-btn">
+            <label for="nombre"> {{'history.filename' | translate}}:</label>
+            <input type="text" style="height: 30px;" formControlName="nombre" value="" class="a">
+        </div>
+        <div class="col-md-3 margin-left-modular-btn">
+            <label for="resultado"> {{'history.result' | translate}}:</label>
+            <input type="text" style="height: 30px;" formControlName="resultado" value="" class="a">
+        </div>
+        <div class="col-md-3  margin-left-modular-btn arreglarCheckbox">
+            <label class= "width-80-bigscreen" >{{'history.onlyResults' | translate}}</label>
+            <input type="checkbox" formControlName="soloResultados" class="mediano arreglarCheckbox">
+        </div>
+    </div>
+    <br>
+
+    <div class="row margin-top margin-left-modular align-center">
+        <div class="col-md-3 ">
+            <button (click)="filtrar()" class="btn btn-primary boton"> {{'history.filter' | translate}}</button>
+        </div>
+    </div>
+
+
+
+</form>
+
+<br>
+<br>
+<div class="col-md-11 margin-left-modular-input" style="margin: 0 auto;">
+    <div class="responsiva" style="border-width: 1px;border-style: solid;">
+        <mat-table [dataSource]="this.dataSource" multiTemplateDataRows matSort>
+            <ng-container matColumnDef="mostrarSubtabla">
+                <mat-header-cell *matHeaderCellDef></mat-header-cell>
+                <mat-cell class="fix-btn-modular" *matCellDef="let row" data-label="">
+                    <button class="btn btn-primary" type="button" (click)="desplegarSubtabla(row)"
+                        [disabled]="row.ctm.length === 0" *ngIf="!row.isExpanded" ngbTooltip="Mostrar detalles">
+                        +
+                    </button>
+                    <button class="btn btn-primary" type="button" (click)="plegarSubtabla(row)"
+                        [disabled]="row.ctm.length === 0" *ngIf="row.isExpanded" ngbTooltip="Ocultar detalles">
+                        -
+                    </button>
+                </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="code" class="ac5">
+                <mat-header-cell class="ac5" *matHeaderCellDef mat-sort-header="code">{{'history.code' |
+                    translate}}</mat-header-cell>
+                <mat-cell class="ac5" *matCellDef="let row" data-label="code">
+                    {{row.code}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="text" class="ac20">
+                <mat-header-cell *matHeaderCellDef class="ac20" mat-sort-header="text">{{'main.config.tag' | translate}}
+                </mat-header-cell>
+                <mat-cell *matCellDef="let row" class="ac20" data-label="text">
+                    {{row.text}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container class="ac30" matColumnDef="nbest">
+                <mat-header-cell class="ac30" *matHeaderCellDef mat-sort-header="nbest">{{'history.result' |
+                    translate}}</mat-header-cell>
+                <mat-cell class="ac30" *matCellDef="let row" data-label="nbest">
+                    {{row.nbest}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container class="ac5" matColumnDef="keep">
+                <mat-header-cell class="ac5" *matHeaderCellDef mat-sort-header="keep">{{'history.keep' |
+                    translate}}</mat-header-cell>
+                <mat-cell class="ac5" *matCellDef="let row" data-label="keep">
+                    {{row.keep}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container class="ac5" matColumnDef="beam">
+                <mat-header-cell class="ac5" *matHeaderCellDef mat-sort-header="beam"> {{'history.beam' |
+                    translate}}</mat-header-cell>
+                <mat-cell class="ac5" *matCellDef="let row" data-label="beam">
+                    {{row.beam}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container class="ac15" matColumnDef="filename">
+                <mat-header-cell class="ac15" *matHeaderCellDef mat-sort-header="filename">{{'history.filename' |
+                    translate}}</mat-header-cell>
+                <mat-cell class="ac15" *matCellDef="let row" data-label="filename">
+                    {{row.filename}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container class="ac10" matColumnDef="created_at">
+                <mat-header-cell class="ac10" *matHeaderCellDef mat-sort-header="created_at">{{'history.createdAt' |
+                    translate}}</mat-header-cell>
+                <mat-cell class="ac10" *matCellDef="let row" data-label="created_at">
+                    {{row.created_at}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container class="ac10" matColumnDef="updated_at">
+                <mat-header-cell class="ac10" *matHeaderCellDef mat-sort-header="updated_at">{{'history.updatedAt' |
+                    translate}}</mat-header-cell>
+                <mat-cell class="ac10" *matCellDef="let row" data-label="updated_at">
+                    {{row.updated_at}}
+                </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="expandedDetail">
+                <td mat-cell *matCellDef="let element" [attr.colspan]="displayedSubColumns.length">
+                    <div class="example-element-detail" [@detailExpand]="element.isExpanded ? 'expanded' : 'collapsed'">
+                        <table mat-table [dataSource]="element.ctm" class="mat-elevation-z8" width="100%"
+                            style="width: 100%;">
+                            <ng-container matColumnDef="channel">
+                                <mat-header-cell *matHeaderCellDef>{{'history.channel' | translate}}</mat-header-cell>
+                                <mat-cell *matCellDef="let row" data-label="channel">
+                                    {{row.channel}}
+                                </mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="tbeg">
+                                <mat-header-cell *matHeaderCellDef>{{'history.Tstart' | translate}}</mat-header-cell>
+                                <mat-cell *matCellDef="let row" data-label="tbeg">
+                                    {{row.tbeg}}
+                                </mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="dur">
+                                <mat-header-cell *matHeaderCellDef>{{'history.duration' | translate}}</mat-header-cell>
+                                <mat-cell *matCellDef="let row" data-label="dur">
+                                    {{row.dur}}
+                                </mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="word">
+                                <mat-header-cell *matHeaderCellDef>{{'history.word' | translate}}</mat-header-cell>
+                                <mat-cell *matCellDef="let row" data-label="word">
+                                    {{row.word}}
+                                </mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="score">
+                                <mat-header-cell *matHeaderCellDef>{{'history.score' | translate}}</mat-header-cell>
+                                <mat-cell *matCellDef="let row" data-label="score">
+                                    {{row.score}}
+                                </mat-cell>
+                            </ng-container>
+
+                            <tr mat-header-row *matHeaderRowDef="displayedSubColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedSubColumns;"></tr>
+                        </table>
+                    </div>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let element; columns: displayedColumns;" class="example-element-row"
+                [class.example-expanded-row]="element.isExpanded">
+            </tr>
+            <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+        </mat-table>
+        <mat-paginator #paginator [length]="dataSource.data.length" [pageSizeOptions]="[10,20,50,100]"
+            showFirstLastButton="true">
+        </mat-paginator>
+
+    </div>
+</div>
+<br>
+<div class="row">
+
+    <div class="col-md-1 margin-left-modular width-modular" style="margin-left: 4%;width: auto;height: 50px;">
+        <button (click)="descargarJSON()" class="btn btn-primary botonCargar"> {{'history.downloadAsJSON' |
+            translate}}</button>
+    </div>
+
+
+    <div class="col-md-3 margin-left-modular padding-top-modular align-right width-100-modular" *ngIf="!ocultar"
+        style=" width: auto ;height: 50px;">
+        <label> {{'history.messageLoadMore' | translate:{cantidadCargada:cantidadCargada,
+            cantidadPosible:cantidadPosible} }} </label>
+        <button (click)="obtenerMas()" [disabled]="cargando === true"
+            class="btn btn-primary botonCargar width-modular no-margin-modular" style="width: auto ; margin-left: 5px;">
+            {{'history.loadMore' | translate:{limite: limite} }} </button>
+    </div>
+    <div class="col-md-1" style="margin-left: -5%;margin-top:50px"><br></div>
+    <div class="row" style="text-align:center;margin-top: 20px;" class="align-center">
+        <label>Audioserver - (C) CLST. 2023 </label>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

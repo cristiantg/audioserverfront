@@ -1,0 +1,379 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+/* @import '~bootstrap/scss/bootstrap'; */
+
+.fill-remaining-space {
+    /*This fills the remaining space, by using flexbox.
+   Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+  
+  .mini-titulo {
+    color: #2fa4e7;
+    ;
+    font-weight: bold;
+  }
+  
+  .cdk-global-overlay-wrapper,
+  .cdk-overlay-container {
+    z-index: 10000 !important;
+  }
+  
+  /* Cambiar color botones modales */
+  .swal2-popup .swal2-styled.swal2-confirm {
+    background-color: #2fa4e7 !important;
+    border: 1px solid #2fa4e7 !important;
+  }
+  
+  .swal2-title {
+    font-size: medium !important;
+  }
+  
+  .swal2-icon {
+    font-size: medium !important;
+  }
+  
+  .swal2-icon.swal2-warning.swal2-icon-show {
+    width: 45px !important;
+    height: 42px !important;
+    padding-bottom: 0.3em;
+  }
+  
+  .swal2-icon .swal2-icon-content {
+    font-size: 2.4em !important;
+  }
+  
+  .swal2-html-container {
+    font-size: medium !important;
+  }
+  
+  .swal2-styled.swal2-cancel {
+    background-color: rgb(214, 9, 9) !important;
+  }
+  
+  /* .swal2-popup:hover .swal2-styled.swal2-confirm:hover {
+    background-color: #2586be !important;
+    border: 5px solid #2586be !important;
+  }
+  
+  .swal2-popup:focus .swal2-styled.swal2-confirm:focus {
+    background-color: #2586be !important;
+    border: 5px solid #2586be !important;
+  } */
+  
+  .swal2-popup .swal2-content {
+    color: black !important;
+    font-weight: 350 !important;
+  }
+  
+  .ngb-dp-header {
+    width: 100% !important;
+    text-align: center !important;
+    border-bottom: 2px solid #e2e2e2 !important;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.10) !important;
+    padding: 10px 0 !important;
+    background: transparent !important;
+    font-size: xx-small !important;
+  }
+  
+  [ngbDatepickerDayView] {
+  
+    font-size: small !important;
+  }
+  
+  .ngb-dp-weekday {
+    font-size: small !important;
+  }
+  
+  .ngb-dp-header {
+    font-size: small !important;
+  }
+  
+  .ngb-datepicker-navigation-select>.custom-select {
+    font-size: x-small !important;
+  }
+  
+  .ngb-dp-navigation-select {
+    font-size: small !important;
+  
+  }
+  
+  /****** Transiciones *******/
+  router-outlet+*,
+  app-spinner div {
+    display: block;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+  
+  app-spinner div {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+  
+  /* estilos tablas  */
+  .ac3 {
+    max-width: 3%;
+  }
+  
+  .ac4 {
+    max-width: 4%;
+  }
+  
+  .ac5 {
+    max-width: 5%;
+  }
+  
+  .ac6 {
+    max-width: 6%;
+  }
+  
+  .ac7 {
+    max-width: 7%;
+  }
+  
+  .ac8 {
+    max-width: 8%;
+  }
+  
+  .ac9 {
+    max-width: 9%;
+  }
+  
+  .ac10 {
+    max-width: 10%;
+  }
+  
+  .ac12 {
+    max-width: 12%;
+  }
+  
+  .ac15 {
+    max-width: 15%;
+  }
+  
+  .ac16 {
+    max-width: 16%;
+  }
+  
+  .ac16_5 {
+    max-width: 16.5%;
+  }
+  
+  .ac17 {
+    max-width: 17%;
+  }
+  
+  .ac20 {
+    max-width: 20%;
+  }
+  
+  .ac25 {
+    max-width: 25%;
+  }
+  
+  .ac30 {
+    max-width: 30%;
+  }
+  
+  .ac35 {
+    max-width: 35%;
+  }
+  
+  .ac40 {
+    max-width: 40%;
+  }
+  
+  .ac45 {
+    max-width: 45%;
+  }
+  
+  .ac50 {
+    max-width: 50%;
+  }
+  
+  .ac55 {
+    max-width: 55%;
+  }
+  
+  .ac60 {
+    max-width: 60%;
+  }
+  
+  .ac65 {
+    max-width: 65%;
+  }
+  
+  .ac70 {
+    max-width: 70%;
+  }
+  
+  .ac75 {
+    max-width: 75%;
+  }
+  
+  .ac80 {
+    max-width: 80%;
+  }
+  
+  .ac85 {
+    max-width: 85%;
+  }
+  
+  .ac90 {
+    max-width: 90%;
+  }
+  
+  .ac95 {
+    max-width: 95%;
+  }
+  
+  .ml5 {
+    margin-left: 5px !important;
+  }
+  
+  .mr5 {
+    margin-right: 5px !important;
+  }
+  
+  .celda-centro {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .celda-derecha {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  
+  /****** Transiciones *******/
+  router-outlet+*,
+  app-loader div {
+    display: block;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+  
+  app-loader div {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn,
+  router-outlet+*,
+  app-loader div {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  .fixFlex {
+    flex-basis: auto !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-width: auto !important;
+  }
+  
+
+  
+  .mat-header-row {
+    background-color: #f8f8f8;
+  }
+  
+  .mat-header-row,
+  .mat-footer-row,
+  .mat-row {
+    min-height: 42px;
+  }
+  
+  .mat-header-cell,
+  .mat-cell,
+  .mat-footer-cell {
+    font-size: 12px;
+    min-height: auto;
+  }
+  
+  mat-cell:first-of-type,
+  mat-footer-cell:first-of-type,
+  mat-header-cell:first-of-type {
+    padding-left: 16px !important;
+  }
+  
+  mat-cell:last-of-type,
+  mat-footer-cell:last-of-type,
+  mat-header-cell:last-of-type {
+    padding-right: 16px !important;
+  }
+  
+  .mat-elevation-z {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #e8e8e8;
+  }
+  
+  /* botones */
+  @media (min-width: 959px) {
+    .cola1 {
+      flex: 0 0 210px !important;
+      width: 210px !important;
+    }
+  
+    .cola2 {
+      flex: 0 0 300px !important;
+      width: 300px !important;
+    }
+  
+    .cola3 {
+      flex: 0 0 150px !important;
+      width: 150px !important;
+    }
+  
+    .cola4 {
+      flex: 0 0 100px !important;
+      width: 100px !important;
+    }
+  
+    .cola5 {
+      flex: 0 0 60px !important;
+      width: 60px !important;
+    }
+  }
+  
+  i {
+    color: black;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+html, body { height: 100%; }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

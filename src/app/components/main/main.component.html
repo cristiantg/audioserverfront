@@ -1,0 +1,124 @@
+<div style="text-align:center;margin-top: 20px;" class="align-center">
+  <div class="row">
+    <div class="col-md-1" style="margin-right: 10px;">
+      <br>
+    </div>
+    <div class="col-md-5 center-bigscreen" style="margin-left: auto;">
+      <h1 class="margin-top-title  margin-left-modular-title"> {{'main.title' | translate}} </h1>
+    </div>
+    <div class="col-md-1 align-right right-margin centraTexto margin-left-modular width-bigscreen">
+      <label><mat-icon class="bajar-modular" style="width: 100%;">account_circle</mat-icon> {{username}} </label>
+      <button class="btn btn-primary botonSesion" (click)="historial()"
+        style="padding-top: 0px;padding-bottom: 0px;">{{'menu.history' | translate}}</button>
+      <form [formGroup]="langSelect">
+        <select class="btn btn-primary botonSesion" (change)="useLanguage($event)" formControlName="lang"
+          style="padding-left: 25px;padding-bottom: 0px;padding-top: 0px;">
+          <option lang="en-US" value="en-US">English </option>
+          <option lang="es-ES" value="es-ES">Español </option>
+        </select>
+      </form>
+      <button class="btn btn-danger botonSesion" (click)="cerrarSesion()"
+        style="font-size: 1rem !important;padding: 1px;">{{'menu.logout' | translate}}</button>
+
+    </div>
+  </div>
+  <form [formGroup]="formPrincipal">
+
+
+    <div class="row align-center margin-top " style="margin-top: -10px;">
+      <div class="col-md-5 margin-left-modular-btn">
+        <label for="mensaje">{{'main.config.tag' | translate}}</label>
+        <input type="text" maxlength="100" formControlName="mensaje" class="a" style="height: 30px;">
+      </div>
+    </div>
+
+    <div class="row margin-top align-center ">
+
+      <div class="col-md-2 right-margin ">
+        <div class="row margin-left-modular-input">
+          <label for="idioma"> {{'main.config.language' | translate}}</label>
+          <select formControlName="idioma" id="idioma" class="a" style="height: 30px;">
+            <option [ngValue]="9">{{'main.config.languages.es' | translate}}</option>
+            <option [ngValue]="1">{{'main.config.languages.du' | translate}}</option>
+            <option [ngValue]="3">{{'main.config.languages.en' | translate}}</option>
+	    <option [ngValue]="5">{{'main.config.languages.br' | translate}}</option>
+	    <option [ngValue]="6">{{'main.config.languages.fl' | translate}}</option>
+	    <option [ngValue]="11">{{'main.config.languages.ir' | translate}}</option>
+          </select>
+        </div>
+
+        <div class="row margin-left-modular-input padding-top-modular" style="padding-top: 15px;">
+          <label> {{'main.config.beam' | translate}}</label>
+          <input type="number" formControlName="beam" style="height: 30px;" min="1" max="30" value="12" class="a">
+        </div>
+
+        <div class="row" style="padding-top: 5px;">
+          <div class="row margin-left-modular-input" style="margin-top: 15px; ">
+            <div class="col-md-8 no-padding-right" style="height: 30px;">
+              <label for="guardar">{{'main.config.save' | translate}}</label>
+            </div>
+            <div class="col-md-2 no-padding-left">
+              <input type="checkbox" formControlName="guardar" class="mediano">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-7 padding-top-modular margin-left-modular-btn" style="margin-bottom: 50px;">
+        <textarea name="texto" cols="40" rows="7" disabled="true">{{resultado}}</textarea>
+      </div>
+
+      <div class="col-md-2 margin-left-modular-btn subir-modular">
+        <mat-icon>mic</mat-icon>
+        <div class="progress" style="margin: 10px 2%;">
+          <div class="progress-bar" [style.width.%]="intensidad" class="verde" style="transition-duration:50ms;"
+            role="progressbar"></div>
+          <div class="progress-bar" [style.width.%]="intensidad2" class="amarilla" style="transition-duration:50ms;"
+            role="progressbar"></div>
+          <div class="progress-bar" [style.width.%]="intensidad3" class="naranja" style="transition-duration:50ms;"
+            role="progressbar"></div>
+          <div class="progress-bar" [style.width.%]="intensidad4" class="roja" style="transition-duration:50ms;"
+            role="progressbar"></div>
+        </div>
+
+        <br>
+        <mat-icon>cloud_upload</mat-icon>
+        <div class="progress" style="margin: 10px 2%;">
+          <div class="progress-bar" [ngClass]="claseBarra" role="progressbar">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row align-center" style="margin-top: 0px;">
+      <div class="col-md-3 padding-top-modular margin-left-modular-btn" *ngIf="!recording">
+        <button (click)="initiateRecording()" [disabled]="apagarBoton" class="btn btn-primary"> {{'main.start' |
+          translate}} <mat-icon style="margin-bottom: -7px;"> play_arrow</mat-icon>
+        </button>
+      </div>
+      <div *ngIf="recording" class="col-md-3 padding-top-modular margin-left-modular-btn">
+        <button (click)="stopRecordingAux()" class="btn btn-danger"> {{'main.stop' | translate}} <mat-icon
+            style="margin-bottom: -7px;">pause</mat-icon></button>
+      </div>
+
+
+      <div class="col-md-3 padding-top-modular margin-left-modular-btn">
+        <button (click)="limpiar()" class="btn btn-primary"> {{'main.clear' | translate}} <mat-icon
+            style="margin-bottom: -7px;">delete</mat-icon></button>
+      </div>
+    </div>
+    <div class="row" *ngIf="apagarBoton">
+      <a>{{'main.limite' | translate}}</a>
+    </div>
+
+
+  </form>
+  <br>
+  <br>
+  <div class="row">
+    <label>Audioserver - (C) CLST. 2023 </label>
+  </div>
+</div>
