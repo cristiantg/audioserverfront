@@ -33,6 +33,7 @@
         "main.config.languages.ir": "Irish",
 	"main.config.save": "Keep audio:",
 	"main.config.tag": "Recording tag",
+	"main.error.beam": "The level must be between 1 and 30",
 	"main.limite": "Character limit reached, clear the result to continue using the page",
 	"main.start": "Start recording",
 	"main.stop": "Stop recording",

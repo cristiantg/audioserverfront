@@ -33,6 +33,7 @@
 	"main.config.languages.ir": "Irlandés",
 	"main.config.save": "Guardar audio:",
 	"main.config.tag": "Nombre de la grabación",
+	"main.error.beam": "El valor de reconocimiento debe estar entre 1 y 30",
 	"main.limite": "Límite de caracteres alcanzado, limpie el resultado para continuar usando la página",
 	"main.start": "Iniciar la grabación",
 	"main.stop": "Parar la grabación",

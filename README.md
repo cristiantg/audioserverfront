@@ -11,7 +11,7 @@ Requires a standard [docker](https://docs.docker.com/engine/install/ubuntu/) dis
 ```bash
 cd audioserverfront
 docker build --no-cache -t audioserverfront .
-docker run -d -p 80:80 audioserverfront
+docker run --restart=always -d -p 80:80 audioserverfront
 ```
 
 ## Acknowlegment

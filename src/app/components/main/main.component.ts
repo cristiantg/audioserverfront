@@ -12,6 +12,7 @@ import { Observable, Subscription, timer } from 'rxjs';
 import { Router, RouterModule, Routes } from '@angular/router';
 import * as Constantes from '../../constantes';
 import { TranslateService } from '@ngx-translate/core';
+import * as swal from 'sweetalert2';
 declare var require: any
 
 @Component({
@@ -109,17 +110,31 @@ export class MainComponent {
 
   // Comenzar a grabar
   initiateRecording() {
+    this.formPrincipal.disable()
+    if (this.formPrincipal.controls['beam'].value < 1 || this.formPrincipal.controls['beam'].value > 30) {
+      const swal = require('sweetalert2')
+      this.translate.get('main.error.beam').subscribe((res: string) => {
+        swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: res
+        })
+      });
+      //console.log('mal')
+      this.formPrincipal.enable()
+    } else {
+      this.recording = true;
+      let mediaConstraints = {
+        video: false,
+        audio: true
+      };
 
-    this.recording = true;
-    let mediaConstraints = {
-      video: false,
-      audio: true
-    };
+      //Grabar audio para enviarlo al server
+      navigator.mediaDevices.getUserMedia(mediaConstraints).then(this.successCallback.bind(this), this.errorCallback.bind(this));
+      //Para indicador de intensidad del micro
+      navigator.mediaDevices.getUserMedia(mediaConstraints).then(this.successCallback2.bind(this), this.errorCallback2.bind(this));
+    }
 
-    //Grabar audio para enviarlo al server
-    navigator.mediaDevices.getUserMedia(mediaConstraints).then(this.successCallback.bind(this), this.errorCallback.bind(this));
-    //Para indicador de intensidad del micro
-    navigator.mediaDevices.getUserMedia(mediaConstraints).then(this.successCallback2.bind(this), this.errorCallback2.bind(this));
   }
 
   successCallback(stream: MediaStream) {
@@ -289,6 +304,7 @@ export class MainComponent {
 
 
   stopRecording() {
+    this.formPrincipal.enable();
     this.recording = false;
     this.contTiempo = 0;
     //Para las 2 grabaciones y el VAD, y procesa el resultado
@@ -373,7 +389,7 @@ export class MainComponent {
               //Parar la grabación y bloquear el botón en cado de que se superen los 500 caracteres
               if (this.resultado.length >= 500) {
                 if (this.recording === true){
-                  console.log('a')
+                  //console.log('a')
                   this.stopRecording();
                 }
                 

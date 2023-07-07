@@ -1,12 +1,12 @@
 export class Constants {
     //tiempo para que se envie el audio al servidor (ms)
-    public static timeAutoSend = 4500;
+    public static timeAutoSend = 6000;
     //tiempo que el usuario tiene que estar callado para que se envie el audio al servidor (ms)
-    public static timeInactiveSend = 650;
+    public static timeInactiveSend = 800;
     //valor por defecto del beam
     public static beam = 13;
-    //idioma por defecto
-    public static language = 9;
+    //idioma por defecto (see api-docs)
+    public static language = 1;
     //guardar el audio por defecto (0->no  1->si)
     public static save = 0;
     //cuantas entradas del historial se cargan automaticamente
