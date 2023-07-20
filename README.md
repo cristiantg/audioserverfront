@@ -14,6 +14,11 @@ docker build --no-cache -t audioserverfront .
 docker run --restart=always -d -p 80:80 audioserverfront
 ```
 
+## TODO
+
+Check first whether the microphoen is enabled. Otherwise do not start recording or send data to the server.
+
+
 ## Acknowlegment
 
 This project has been developed in collaboration with D. Figueroa Fernández.
